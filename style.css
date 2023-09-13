@@ -1,0 +1,88 @@
+body {
+  background-image: url("https://gachi.gay/ZiVLZ");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: 100%;
+  overflow: scroll;
+}
+br {
+  margin-bottom: 2em;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+#title {
+  display: block;
+  text-align: center;
+  font-size: 80px;
+  text-shadow: yellow 1px 0 10px;
+  color: yellow;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: yellow;
+}
+
+.steam {
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  left: 300px;
+  max-width: 100%;
+  height: auto;
+}
+
+.discord {
+  display: inline-block;
+  position: relative;
+  top: 300px;
+  right: 100px;
+  max-width: 100%;
+  height: auto;
+}
+
+.github {
+  display: inline-block;
+  position: relative;
+  top: 350px;
+  left: 900px;
+  max-width: 100%;
+  height: auto;
+}
+
+.twitter {
+  display: inline-block;
+  position: relative;
+  top: 200px;
+  left: 500px;
+  max-width: 100%;
+  height: auto;
+}
+
+.twitch {
+  display: inline-block;
+  position: relative;
+  left: 150px;
+  top: 50px;
+  max-width: 100%;
+  height: auto;
+}
+
+.time {
+  display: inline-block;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  right: 1300px;
+  bottom: 170px;
+  color: yellow;
+}
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
