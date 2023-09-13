@@ -14,9 +14,3 @@ function updateTime() {
 }
 
 updateTime();
-
-new Twitch.Player("twitch-embed", {
-  width: 400,
-  height: 225,
-  channel: "forsen",
-});
