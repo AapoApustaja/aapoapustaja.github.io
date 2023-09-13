@@ -9,67 +9,92 @@ body {
   display: block;
   text-align: center;
   font-size: 80px;
+  font-family: Comic Sans MS, Comic Sans, Cursive;
   text-shadow: yellow 1px 0 10px;
   color: yellow;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: yellow;
 }
 
-.steam {
+.container {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* 200px */
+#steam {
   display: inline-block;
   position: relative;
   top: 200px;
-  left: 300px;
+  left: 150px;
   max-width: 100%;
   height: auto;
 }
 
-.discord {
-  display: inline-block;
-  position: relative;
-  top: 350px;
-  right: 100px;
-  max-width: 100%;
-  height: auto;
-}
-
-.github {
-  display: inline-block;
-  position: relative;
-  top: 350px;
-  left: 850px;
-  max-width: 100%;
-  height: auto;
-}
-
-.twitter {
+#twitter {
   display: inline-block;
   position: relative;
   top: 200px;
-  left: 400px;
+  left: 150px;
   max-width: 100%;
   height: auto;
 }
 
-.twitch {
+/**/
+
+/* 350px */
+#discord {
   display: inline-block;
   position: relative;
-  left: 50px;
+  top: 350px;
+  right: 275px;
+  max-width: 100%;
+  height: auto;
+}
+
+#github {
+  display: inline-block;
+  position: relative;
+  top: 350px;
+  left: 625px;
+  max-width: 100%;
+  height: auto;
+}
+
+/**/
+
+/* 95px */
+#twitch {
+  display: inline-block;
+  position: relative;
+  right: 250px;
   top: 95px;
   max-width: 100%;
   height: auto;
 }
 
-.time {
+/**/
+
+#wyvern {
   display: inline-block;
-  font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
   position: relative;
-  right: 1300px;
-  bottom: 170px;
+  bottom: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+#current-time {
+  display: block;
+  font-size: 30px;
+  font-family: Comic Sans MS, Comic Sans, Cursive;
+  position: relative;
+  text-align: center;
+  top: 500px;
   color: yellow;
 }
 
+/* zooming */
 .zoom {
   transition: transform 0.2s;
 }
@@ -78,6 +103,9 @@ body {
   transform: scale(1.5);
 }
 
+/**/
+
+/* for mobile and windowed */
 @media screen and (max-width: 1600px) {
   body {
     background-size: auto;
@@ -88,11 +116,13 @@ body {
     font-size: 40px;
   }
 
-  .steam,
-  .discord,
-  .github,
-  .twitter,
-  .twitch {
+  #steam,
+  #discord,
+  #github,
+  #twitter,
+  #twitch,
+  #wyvern,
+  #current-time {
     display: block;
     position: static;
     margin: 10px auto;
@@ -105,3 +135,5 @@ body {
     margin-top: 20px;
   }
 }
+
+/* */
