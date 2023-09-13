@@ -118,13 +118,10 @@ body {
 /* zooming */
 .zoom {
   transition: transform 0.2s;
-  position: relative;
-  z-index: 1;
 }
 
 .zoom:hover {
   transform: scale(1.5);
-  z-index: 2;
 }
 
 /**/
