@@ -22,6 +22,17 @@ body {
   font-size: 40px;
 }
 
+#other-stuff {
+  display: inline-block;
+  position: absolute;
+  font-size: 20px;
+  font-family: "Comic Sans MS", "Comic Sans", Cursive;
+  text-decoration: none;
+  color: yellow;
+  bottom: 50px;
+  right: 50px;
+}
+
 /* 200px */
 #steam {
   display: inline-block;
@@ -87,7 +98,10 @@ body {
 #current-time {
   display: block;
   font-size: 30px;
+  max-width: 100%;
+  height: auto;
   font-family: "Comic Sans MS", "Comic Sans", Cursive;
+  text-decoration: none;
   position: relative;
   text-align: center;
   top: 500px;
@@ -104,10 +118,13 @@ body {
 /* zooming */
 .zoom {
   transition: transform 0.2s;
+  position: relative;
+  z-index: 1;
 }
 
 .zoom:hover {
   transform: scale(1.5);
+  z-index: 2;
 }
 
 /**/
@@ -123,7 +140,7 @@ body {
     font-size: 40px;
   }
 
-  #twitch-embed {
+  #other-stuff {
     display: none;
   }
 

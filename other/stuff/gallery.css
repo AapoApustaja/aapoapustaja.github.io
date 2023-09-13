@@ -1,0 +1,43 @@
+body {
+  background-image: url("./../../images/gallery.jpg"),
+    url("./../../images/gallery2.jpg");
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: 100%, 100%;
+}
+
+#takaisin {
+  text-decoration: none;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  color: white;
+  font-size: 50px;
+}
+
+#kuva {
+  display: inline-block;
+  position: relative;
+  max-width: 25%;
+  max-height: 25%;
+  height: auto;
+}
+
+.container {
+  padding-top: 10%;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+}
+
+.zoom {
+  transition: transform 0.2s;
+  position: relative;
+  z-index: 1;
+}
+
+.zoom:hover {
+  transform: scale(1.4);
+  z-index: 2;
+}

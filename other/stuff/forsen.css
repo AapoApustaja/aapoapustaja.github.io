@@ -1,0 +1,23 @@
+body {
+  background-image: url("./../../images/watchingFors.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#twitch-embed {
+  display: block;
+  position: relative;
+  left: 587px;
+  top: 134px;
+}
+
+#takaisin {
+  text-decoration: none;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  color: black;
+  font-size: 50px;
+}
