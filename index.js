@@ -10,8 +10,13 @@ function updateTime() {
   };
   const timeString = now.toLocaleTimeString("en-GB", options);
   clockElement.textContent = timeString;
-
   setTimeout(updateTime, 1000); // Update the clock every second
 }
 
 updateTime();
+
+new Twitch.Player("twitch-embed", {
+  width: 400,
+  height: 225,
+  channel: "forsen",
+});

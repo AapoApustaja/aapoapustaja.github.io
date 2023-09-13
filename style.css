@@ -9,7 +9,7 @@ body {
   display: block;
   text-align: center;
   font-size: 80px;
-  font-family: Comic Sans MS, Comic Sans, Cursive;
+  font-family: "Comic Sans MS", "Comic Sans", Cursive;
   text-shadow: yellow 1px 0 10px;
   color: yellow;
   -webkit-text-stroke-width: 2px;
@@ -87,11 +87,18 @@ body {
 #current-time {
   display: block;
   font-size: 30px;
-  font-family: Comic Sans MS, Comic Sans, Cursive;
+  font-family: "Comic Sans MS", "Comic Sans", Cursive;
   position: relative;
   text-align: center;
   top: 500px;
   color: yellow;
+}
+
+#twitch-embed {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /* zooming */
