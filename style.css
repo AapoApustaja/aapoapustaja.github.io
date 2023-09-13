@@ -123,6 +123,10 @@ body {
     font-size: 40px;
   }
 
+  #twitch-embed {
+    display: none;
+  }
+
   #steam,
   #discord,
   #github,
