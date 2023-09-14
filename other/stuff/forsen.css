@@ -23,7 +23,7 @@ body {
 }
 
 /* for mobile and windowed */
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
   body {
     background-size: auto;
     background-position: center center;
