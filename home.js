@@ -10,7 +10,7 @@ function updateTime() {
   };
   const timeString = now.toLocaleTimeString("en-GB", options);
   clockElement.textContent = timeString;
-  setTimeout(updateTime, 1000); // Update the clock every second
+  setTimeout(updateTime, 1000);
 }
 
 updateTime();

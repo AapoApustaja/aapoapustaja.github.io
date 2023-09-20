@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+body {
+  background-image: url("./images/background.png");
+  font-family: "Montserrat", sans-serif;
+  background-repeat: repeat;
+  background-color: #24252a;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+h1,
+a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: purple;
+  text-decoration: none;
+}
+
+header {
+  background-color: #24252a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10%;
+  height: 69px;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 10px; /* Adjust the height as needed */
+  background-color: purple; /* Set your desired color */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+h1:hover {
+  color: rgb(248, 38, 248);
+}
+
+.links a:hover {
+  color: rgb(248, 38, 248);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This makes the div fill the vertical viewport height */
+}
+
+.social-box {
+  width: 250px;
+  height: 250px;
+  background-color: rgba(148, 11, 148, 0.5);
+  box-shadow: 0 0 10px rgba(128, 0, 128, 0.5);
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
+  position: relative;
+  z-index: 1;
+}
+
+.social-box:hover {
+  box-shadow: 0 0 20px rgba(255, 90, 214, 0.5);
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.social-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+}
+
+.social-box span {
+  color: white;
+  font-size: 38px;
+}
+
+.social-box span a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* for mobile and windowed */
+@media screen and (max-width: 1000px) {
+  body {
+    background-size: auto;
+    background-position: center center;
+  }
+
+  .social {
+    flex-direction: column; /* stacks boxes vertically */
+  }
+
+  .social-box {
+    width: 50%;
+    margin: 10px 0;
+  }
+
+  .social-box img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .social-box span {
+    font-size: 24px;
+  }
+
+  .social-box:hover {
+    transform: scale(1); /* Remove scaling on hover for mobile */
+  }
+}

@@ -1,6 +1,6 @@
 body {
   background-image: url("./../../images/watchingFors.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-color: black;
   background-size: cover;
   overflow: hidden;
@@ -13,9 +13,10 @@ body {
   top: 134px;
 }
 
-#takaisin {
+#back {
   text-decoration: none;
   position: absolute;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   top: 50px;
   left: 100px;
   color: black;

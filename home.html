@@ -1,62 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>get the juice</title>
-    <link rel="icon" type="image/png" href="./images/haHAA.png" />
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="./images/ApuApustaja.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-    <h1 id="title">😎AapoApustaja😎</h1>
-
-    <div class="container">
-      <!-- Steam -->
-      <a id="steam" href="https://steamcommunity.com/id/finnishfemboy/"
-        ><img src="./images/steam.png" class="zoom"
-      /></a>
-      <!-- Discord -->
-      <a id="discord" href="https://discordapp.com/users/128933824129269760"
-        ><img src="./images/discord.png" class="zoom"
-      /></a>
-
-      <!-- GitHub -->
-      <a id="github" href="https://github.com/AapoApustaja"
-        ><img src="./images/github.png" class="zoom"
-      /></a>
-
-      <!-- Twitter -->
-      <a id="twitter" href="https://twitter.com/AapoApustaja"
-        ><img src="./images/twitter.png" class="zoom"
-      /></a>
-
-      <!-- Twitch -->
-      <a id="twitch" href="https://twitch.tv/AapoApustaja"
-        ><img src="./images/twitch.png" class="zoom"
-      /></a>
-
-      <!-- Current time -->
-      <h2 id="current-time"></h2>
-      <!-- Wyvern -->
-      <marquee id="wyvern" behavior="scroll" direction="left">
-        <img
-          src="https://gamepedia.cursecdn.com/terraria_gamepedia/thumb/c/c1/Wyvern.png/299px-Wyvern.png?version=ab5f234d368596c36089565d9fe96084"
-          alt="Wyvern"
-        />
-      </marquee>
-      <script src="index.js"></script>
-      <!-- Other pages -->
-      <a href="./other/other.html" id="other-stuff">other stuff</a>
-
-    
+    <header>
+      <h1>AapoApustaja</h1>
+      <img id="logo" src="./images/apuBand.webp" />
+      <nav>
+        <ul class="links">
+          <a href="./other/other.html">Other stuff</a>
+        </ul>
+      </nav>
+    </header>
+    <div class="social">
+      <div class="social-box">
+        <a href="https://twitch.tv/AapoApustaja">
+          <img src="./images/twitch.png" alt="Twitch icon" />
+        </a>
+        <span>
+          <a href="https://twitch.tv/AapoApustaja"> Twitch </a>
+        </span>
+      </div>
+      <div class="social-box">
+        <a href="https://discord.com/users/128933824129269760">
+          <img src="./images/Discord.png" />
+        </a>
+        <span>
+          <a href="https://discord.com/users/128933824129269760">Discord</a>
+        </span>
+      </div>
+      <div class="social-box">
+        <a href="https://steamcommunity.com/id/finnishfemboy/">
+          <img src="./images/Steam.png" />
+        </a>
+        <span>
+          <a href="https://steamcommunity.com/id/finnishfemboy/">Steam</a>
+        </span>
+      </div>
+      <div class="social-box">
+        <a href="https://twitter.com/AapoApustaja">
+          <img src="./images/twitter.png" />
+        </a>
+        <span>
+          <a href="https://twitter.com/AapoApustaja">Twitter</a>
+        </span>
+      </div>
+      <div class="social-box">
+        <a href="https://github.com/AapoApustaja">
+          <img src="./images/GitHub.png" />
+        </a>
+        <span>
+          <a href="https://github.com/AapoApustaja">GitHub</a>
+        </span>
+      </div>
+    </div>
   </body>
 
   <style>
     /* customizable snowflake styling */
     .snowflake {
       color: #fff;
-      font-size: 0.5em;
+      font-size: 1.2em;
       font-family: Arial, sans-serif;
       text-shadow: 0 0 5px #000;
     }

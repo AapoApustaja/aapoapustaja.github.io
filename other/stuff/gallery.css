@@ -1,14 +1,14 @@
 body {
-  background-image: url("./../../images/gallery.jpg"),
-    url("./../../images/gallery2.jpg");
+  background-image: url("./../../images/background.png");
   background-position: top, bottom;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-color: black;
   background-size: 100%, 100%;
 }
 
-#takaisin {
+#back {
   text-decoration: none;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   position: absolute;
   top: 50px;
   left: 100px;
