@@ -7,6 +7,7 @@ body {
   background-color: #24252a;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 li,
@@ -17,6 +18,7 @@ a {
   font-size: 40px;
   color: purple;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 header {
@@ -38,6 +40,11 @@ header::after {
   position: absolute;
   bottom: 0;
   left: 0;
+  transition: background-color 0.3s ease;
+}
+
+header:hover::after {
+  background-color: rgb(248, 38, 248);
 }
 
 h1:hover {
