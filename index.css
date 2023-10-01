@@ -7,7 +7,6 @@ body {
   background-color: #24252a;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 li,
@@ -27,7 +26,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0px 10%;
-  height: 69px;
+  height: 62px;
+  padding-bottom: 5px;
   position: relative;
 }
 
@@ -35,23 +35,72 @@ header::after {
   content: "";
   display: block;
   width: 100%;
-  height: 10px; /* Adjust the height as needed */
-  background-color: purple; /* Set your desired color */
+  height: 10px;
+  background-color: purple;
   position: absolute;
   bottom: 0;
   left: 0;
-  transition: background-color 0.3s ease;
 }
 
-header:hover::after {
-  background-color: rgb(248, 38, 248);
+.menu-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
-h1:hover {
-  color: rgb(248, 38, 248);
+.menu-btn_burger {
+  width: 50px;
+  height: 7px;
+  background: purple;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
 }
 
-.links a:hover {
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 7px;
+  background: purple;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_burger::before {
+  transform: translateY(-15px);
+}
+
+.menu-btn_burger::after {
+  transform: translateY(15px);
+}
+
+.menu-btn.open .menu-btn_burger {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.menu-btn.open .menu-btn_burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn_burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.menu-btn:hover .menu-btn_burger,
+.menu-btn:hover .menu-btn_burger::before,
+.menu-btn:hover .menu-btn_burger::after {
+  background: rgb(248, 38, 248); /* Change the color to the desired one */
+}
+
+.menu-btn.open .menu-btn_burger {
+  background: transparent;
+}
+
+a:hover {
   color: rgb(248, 38, 248);
 }
 
@@ -59,7 +108,7 @@ h1:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* This makes the div fill the vertical viewport height */
+  height: 90vh;
 }
 
 .social-box {
@@ -78,6 +127,7 @@ h1:hover {
   transition: transform 0.2s;
   position: relative;
   z-index: 1;
+  border-radius: 13%;
 }
 
 .social-box:hover {
@@ -110,6 +160,7 @@ h1:hover {
   }
 
   .social {
+    padding-top: 5%;
     flex-direction: column; /* stacks boxes vertically */
   }
 
@@ -129,5 +180,9 @@ h1:hover {
 
   .social-box:hover {
     transform: scale(1); /* Remove scaling on hover for mobile */
+  }
+
+  header {
+    display: none;
   }
 }
